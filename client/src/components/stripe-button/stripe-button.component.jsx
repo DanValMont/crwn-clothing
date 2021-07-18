@@ -17,9 +17,9 @@ const StripeCheckoutButton = ({ price }) => {
                 token
             }
         }).then(response => {
-            alert("Payment successful");
+            alert("successful payment");
         }).catch(error => {
-            console.log("Payment error: ", JSON.parse(error));
+            console.log("Payment Error: ", JSON.parse(error));
             alert("There was an issue with your payment. Please make sure you use the provided credit card.");
         });
     };
@@ -37,7 +37,7 @@ const StripeCheckoutButton = ({ price }) => {
           token={onToken}
           stripeKey={publishableKey}
         />
-    )
-}
+    );
+};
 
 export default StripeCheckoutButton;

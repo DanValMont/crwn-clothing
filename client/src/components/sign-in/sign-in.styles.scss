@@ -11,4 +11,16 @@
         display: flex;
         justify-content: space-between;
     }
+
+    @media screen and (max-width: 800px) {
+        width: 310px;
+
+        .buttons {
+            display: grid;
+            
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            grid-gap: 20px;
+        }
+    }
 }
